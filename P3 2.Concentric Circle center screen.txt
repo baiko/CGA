@@ -1,0 +1,18 @@
+#include<graphics.h>
+#include<conio.h>
+void main()
+{
+ int gd=DETECT,gm;
+int midx,midy;
+initgraph(&gd,&gm,"c:\\TurboC3\\BGI");
+
+midx=getmaxx()/2;
+midy=getmaxy()/2;
+for(r=10;r<100;r+=20)
+{
+ circle(midx,midy,r);
+ outtextxy(260,360,"CONCENTRIC CIRCLE");
+}
+getch();
+closegraph();
+}

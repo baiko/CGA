@@ -1,0 +1,10 @@
+#include<graphics.h>
+#include<conio.h>
+void main()
+{
+ int  gd=DETECT,gm;
+initgraph(&gd,&gm,"c:\\TurboC3\\BGI");
+bar3d(100,160,40,200,150,40);
+getch();
+closegraph();
+}

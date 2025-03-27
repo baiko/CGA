@@ -1,0 +1,10 @@
+#include<graphics.h>
+#include<conio.h>
+void main()
+{
+ int  gd=DETECT,gm;
+initgraph(&gd,&gm,"c:\\TurboC3\\BGI");
+arc(100,50,100,60,40);
+getch();
+closegraph();
+}

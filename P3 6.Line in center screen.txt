@@ -1,0 +1,18 @@
+#include<graphics.h>
+#include<conio.h>
+void main()
+{
+ int gd=DETECT,gm;
+int midx,midy;
+initgraph(&gd,&gm,"c:\\TurboC3\\BGI");
+
+midx=getmaxx()/2;
+midy=getmaxy()/2;
+
+
+line(1,midx,640,midy);
+outtextxy(300,400,"LINE");
+
+getch();
+closegraph();
+}
