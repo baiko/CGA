@@ -1,0 +1,21 @@
+#include<graphics.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<dos.h>
+void main()
+{
+ int gd=DETECT,gm,maxx,maxy,i;
+
+initgraph(&gd,&gm,"c:\\Turboc3\\BGI");
+maxx=getmaxx()/2;
+maxy=getmaxy()/2;
+while(!kbhit())
+{
+for(i=0;i<maxy;i++)
+{
+cleardevice();
+settextstyle(3,0,5);
+outtextxy(maxx,i,"sohan");
+}}
+getch();
+}
